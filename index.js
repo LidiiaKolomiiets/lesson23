@@ -139,6 +139,7 @@ function onSubmitForm(event) {
     };
 
     localStorage.setItem('orders', JSON.stringify(purchasing));
+    
 
 }
 
@@ -183,7 +184,7 @@ function purchasingItem() {
         purchasing.forEach(value => {
             if (el.name === value.name) {
                 value.price = el.price;
-                value.date = date.toLocaleString();
+                value.date = date.toLocaleDateString();
             }
         })
     })
@@ -199,7 +200,7 @@ function purchasingGoogs(city, storage, quantity) {
         quantity,
         name: titleInfo.textContent,
     })
-    purchasingItem();
+    purchasingItem()
 
     orderGoods.classList.add('order-goods');
 
