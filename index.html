@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="all.css">
+    <title></title>
+</head>
+
+<body>
+    <button class="button buttonOrder" id="buttonOrder">Мої замовлення</button>
+    <div class="conteiner" id="conteiner"></div>
+    <div class="block" id='block'>
+        <ul class="list-item">
+            <li class="item" id="softPeas">М'які іграшки</li>
+            <li class="item" id="cars">Машинки</li>
+            <li class="item" id="puppetry">Ляльки</li>
+        </ul>
+    </div>
+
+
+
+    <form class="form-order" onsubmit="onSubmitForm(event)" id="formOrder">
+        <h2>Форма замовлення</h2>
+        <div class="row">
+            <label class="label-form necessarily" for="name">Ім'я :</label>
+            <input class="input-form field" type="text" id="name" name="name" />
+        </div>
+        <div class="row">
+            <label class="label-form necessarily" for="surname">Прізвище :</label>
+            <input class="input-form field" type="text" id="surname" name="surname" />
+        </div>
+        <div class="row">
+            <label class="label-form necessarily" for="city">Місто (вибір зі списку) :</label>
+            <select class="input-form field" id="city" name="city">
+                <option>Львів</option>
+                <option>Харків</option>
+                <option>Київ</option>
+                <option>Одеса</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="label-form necessarily" for="storage">Склад Нової пошти для доставки</label>
+            <input class="input-form field" type="text" id="storage" name="storage" />
+        </div>
+        <div class="row">
+            <p class="label-form necessarily">Оплата :</p>
+            <label class="label-form" for="radio">Оплатити після отримання товару</label>
+            <input class="input-form" type="radio" id="radio" name="radio" value="cash" />
+            <br>
+            <label class="label-form" for="radio1">Оплата банківською картою</label>
+            <input class="input-form" type="radio" id="radio1" name="radio" value="card" checked/>
+        </div>
+        <div class="row">
+            <label class="label-form necessarily" for="quantity">Кількість товару </label>
+            <input class="input-form field" type="number" id="quantity" name="quantity" />
+        </div>
+        <div class="row">
+            <label class="label-form" for="comment">Коментар</label>
+            <textarea class="input-form" id="comment" name="comment"></textarea>
+        </div>
+        <div>
+            <button class="button">Підтвердити</button>
+            <span class="error"></span>
+        </div>
+        <ul class="shoping"></ul>
+    </form>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>

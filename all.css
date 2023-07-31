@@ -1,0 +1,191 @@
+body {
+    font: 300 16px/20px "Rubik", "sans-serif";
+    margin: 0;
+}
+
+.list-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(15, 58, 73);
+    width: 20%;
+    background: rgb(64 152 213);
+    border-radius: 10px;
+}
+
+.block {
+    display: flex;
+    gap: 10px;
+}
+
+.item,
+.item-goods {
+    padding: 10px;
+    margin: 5px 30px 0;
+    cursor: pointer;
+}
+
+.list-goods {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    font-size: 18px;
+    color: rgb(6 50 45);
+    display: none;
+    background: #00e4ff;
+    border-radius: 10px;
+}
+
+.goods-info {
+    background: #91e9f4;
+    border-radius: 10px;
+    display: none;
+    width: 50%;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image-info {
+    width: 200px;
+}
+
+.title-info {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.text-info {
+    margin: 0;
+    font-size: 16px;
+}
+
+.price-info {
+    color: #203b80;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.button-info {
+    border: 2px solid #0091a4;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #29728e94;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.form-order {
+    border: 2px solid blue;
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    display: none;
+}
+
+.input-form {
+    width: 100%;
+    border: 2px solid #070799;
+    font-size: 16px;
+    padding: 3px 5px 3px;
+    border-radius: 10px;
+}
+
+.label-form {
+    display: block;
+    font-family: cursive;
+    color: #000041;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.row textarea {
+    resize: none;
+    height: 150px;
+}
+
+.error {
+    color: red;
+}
+
+.necessarily::before {
+    content: '*';
+    color: red;
+}
+
+.order-goods {
+    border: 2px solid;
+    padding: 10px;
+    position: relative;
+}
+
+.button {
+    padding: 15px;
+    margin: 10px 0 10px;
+    color: #00008f;
+    font-size: 16px;
+    background: #5252f175;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list-order {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 25px 15px;
+    width: 50%;
+    margin: 0 10px 0;
+    list-style: none;
+}
+
+.list-order li {
+    border: 1px solid blue;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.list-order p:hover {
+    color: rgb(3, 97, 3);
+    font-weight: 600;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.order-delete {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.order-delete:before,
+.order-delete:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background: rgb(164, 14, 14);
+    left: -3px;
+    top: 7px;
+}
+
+.order-delete:before {
+    transform: rotate(45deg);
+}
+
+.order-delete:after {
+    transform: rotate(-45deg);
+}
